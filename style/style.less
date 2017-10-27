@@ -1,0 +1,143 @@
+@titleFont: 'Alegreya', serif;
+@textFont: 'Roboto Slab', serif;
+@textColor:  #FCFFF5;
+@neutralLightGreen: #D1DBBD;
+@neutralDarkGreen: #91AA9D;
+@neutralLightBlue: #3E606F;
+@background: #193441;
+
+body {
+	margin: 0 auto;
+	//background: url('../images/3.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: @textFont;
+	background-color: @neutralLightBlue;
+	color: @textColor;
+}
+
+.element, .typed-cursor {
+	color: #FF8C00;
+	font-size: 2em;
+}
+.typed-cursor {
+		opacity: 1;
+		animation: blink .7s infinite;
+}
+
+@keyframes blink {
+	0% {
+	    opacity: 1;
+	}
+	50% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+
+a, a:focus, a:visited, a:active {
+	text-decoration: none;
+	color: @textColor;
+}
+
+a:hover {
+	color:@neutralDarkGreen;
+}
+
+.headshot {
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		box-shadow: 8px 4px 8px 2px rgba(0, 0, 0, .5);
+	}
+}
+
+.fa {
+	font-size: 1.5em;
+}
+
+.title {
+	font-family: @titleFont;
+	font-size: 2em;
+}
+
+.contact {
+	a:hover {
+		font-size: 20px;
+	}
+}
+
+.project-list {
+	display: flex;
+	height: 50vh;
+	.project {
+		text-shadow: 1px 1px 8px black;
+		display: flex;
+		flex-direction: column;
+		background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: cover;
+  		flex: 1 0 10em;
+  		box-shadow: 0 0 30px black;
+  		overflow: hidden;
+  		padding: 1em;
+  		color: @textColor;
+  		transition: flex-basis 500ms ease-in-out;
+	}
+	.project:hover {
+		flex-basis: 30em;
+		.project-info{
+			opacity: 1;
+		}
+	}
+	h4 {
+		font-size: 2em;
+		margin: 0;
+	}
+	.project-info {
+		display: inline;
+		font-size: 1.1em;
+		color: @textColor;
+		z-index: 2;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		opacity: 0;
+		transition: opacity 500ms ease-in-out;
+		overflow: scroll;
+		a {
+			display: inline;
+			margin-right: 20px;
+			i {
+				font-size: 3em;
+			}
+		}
+		i:hover {
+			font-size: 3.5em;
+		}
+		p {
+			margin: 0;
+		}
+		strong {
+			font-size: 1.2em;
+		}
+	}
+}
+
+#wowanalyzer {
+	background-image: url('../images/projects/wowanalyzer50.png');
+}
+#crudybeer {
+	background-image: url('../images/projects/crudybeer50.png');
+}
+#phasertd {
+	background-image: url('../images/projects/phasertd50.png');
+}
