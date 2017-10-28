@@ -39,19 +39,25 @@ body {
 	}
 }
 
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
 a, a:focus, a:visited, a:active {
 	text-decoration: none;
 	color: @textColor;
 }
 
-a:hover {
+a:hover, a:active {
 	color:@neutralDarkGreen;
 }
 
 .headshot {
 	height: 200px;
 	width: 200px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	img {
 		width: 100%;
 		height: auto;
@@ -67,17 +73,21 @@ a:hover {
 .title {
 	font-family: @titleFont;
 	font-size: 2em;
+	text-align: center;
+	margin-bottom: 1%;
 }
 
 .contact {
 	a:hover {
 		font-size: 20px;
 	}
+	a {
+		margin: 0 1em;
+	}
 }
 
 .project-list {
 	display: flex;
-	height: 50vh;
 	.project {
 		text-shadow: 1px 1px 8px black;
 		display: flex;
@@ -93,7 +103,7 @@ a:hover {
   		transition: flex-basis 500ms ease-in-out;
 	}
 	.project:hover {
-		flex-basis: 30em;
+		flex-basis: 20em;
 		.project-info{
 			opacity: 1;
 		}
@@ -120,7 +130,7 @@ a:hover {
 				font-size: 3em;
 			}
 		}
-		i:hover {
+		i:hover, i:active {
 			font-size: 3.5em;
 		}
 		p {
@@ -129,6 +139,39 @@ a:hover {
 		strong {
 			font-size: 1.2em;
 		}
+	}
+}
+
+.about-me {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1%;
+	p {
+		flex-basis: 50%;
+		text-align: center;
+	}
+	ul {
+		flex-basis: 50%;
+	}
+	i {
+		flex-basis: 20%;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	.project-list {
+		flex-direction: column;
+		.project.active {
+			flex-basis: 15em;
+		}
+	}
+	.about-me {
+		ul,p,i{
+			flex-basis: 75%;
+		}
+	}
+	.contact {
+		font-size: 12px;
 	}
 }
 

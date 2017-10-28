@@ -28,6 +28,10 @@ body {
     opacity: 1;
   }
 }
+ul {
+  list-style: none;
+  padding: 0px;
+}
 a,
 a:focus,
 a:visited,
@@ -35,13 +39,15 @@ a:active {
   text-decoration: none;
   color: #FCFFF5;
 }
-a:hover {
+a:hover,
+a:active {
   color: #91AA9D;
 }
 .headshot {
   height: 200px;
   width: 200px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 .headshot img {
   width: 100%;
@@ -55,13 +61,17 @@ a:hover {
 .title {
   font-family: 'Alegreya', serif;
   font-size: 2em;
+  text-align: center;
+  margin-bottom: 1%;
 }
 .contact a:hover {
   font-size: 20px;
 }
+.contact a {
+  margin: 0 1em;
+}
 .project-list {
   display: flex;
-  height: 50vh;
 }
 .project-list .project {
   text-shadow: 1px 1px 8px black;
@@ -78,7 +88,7 @@ a:hover {
   transition: flex-basis 500ms ease-in-out;
 }
 .project-list .project:hover {
-  flex-basis: 30em;
+  flex-basis: 20em;
 }
 .project-list .project:hover .project-info {
   opacity: 1;
@@ -106,7 +116,8 @@ a:hover {
 .project-list .project-info a i {
   font-size: 3em;
 }
-.project-list .project-info i:hover {
+.project-list .project-info i:hover,
+.project-list .project-info i:active {
   font-size: 3.5em;
 }
 .project-list .project-info p {
@@ -114,6 +125,37 @@ a:hover {
 }
 .project-list .project-info strong {
   font-size: 1.2em;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+.about-me p {
+  flex-basis: 50%;
+  text-align: center;
+}
+.about-me ul {
+  flex-basis: 50%;
+}
+.about-me i {
+  flex-basis: 20%;
+}
+@media only screen and (max-width: 850px) {
+  .project-list {
+    flex-direction: column;
+  }
+  .project-list .project.active {
+    flex-basis: 15em;
+  }
+  .about-me ul,
+  .about-me p,
+  .about-me i {
+    flex-basis: 75%;
+  }
+  .contact {
+    font-size: 12px;
+  }
 }
 #wowanalyzer {
   background-image: url('../images/projects/wowanalyzer50.png');
