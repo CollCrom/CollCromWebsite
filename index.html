@@ -9,10 +9,40 @@
 	<script src="https://use.fontawesome.com/7aaa53a795.js"></script>
 	<script type="text/javascript" src='js/app.js'></script>
 	<script src="js/typed.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel='stylesheet' href='style/style.css'>
 </head>
 <body>
 	<div class='background-one'>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class='contact about-me container'>
+				<a href="https://github.com/CollCrom" target="_blank">
+					<span>
+						<i class="fa fa-github-alt" aria-hidden="true"></i>
+					</span>
+					GitHub
+				</a>
+				<a href="https://www.linkedin.com/in/collincromwell/" target="_blank">
+					<span>
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					</span>
+					LinkedIn
+				</a>
+				<a href="mailto:collcrom@gmail.com" target="_blank">
+					<span>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+					collcrom@gmail.com
+				</a>
+				<a href="tel://1-248-933-5802" target="_blank">
+					<span>
+						<i class='fa fa-mobile' aria-hidden="true"></i>
+					</span>
+					248.933.5802
+				</a>
+			</div>
+		</nav>
 		<div class='flex-container'>
 			<div class='headshot'>
 				<img src="./images/collin.jpg">
@@ -23,59 +53,63 @@
 			<span class='element'></span>
 		</div>
 		<div class='about-me'>
-			<p>I'm a Full Stack Web Developer, Machine Learning hobbiest, and Open Source Contributor. My aptitude for problem solving and ability to think creatively allows me to develop unique and beautiful solutions. I love being able to use my skills to blend design and logic into an elegant webpage. I look forward to helping your company start or expand its online presence.</p>
+			<p>I'm a Full Stack Web Developer, Machine Learning hobbiest, and Open Source Contributor. My aptitude for problem solving and ability to think creatively allows me to develop unique and beautiful solutions. I love being able to use my skills to blend design and logic into an elegant webpage.<br><br>
+
+			I worked in customer service for five years managing multiple teams but felt like I wasn’t utilizing my whole potential. Throughout that time I taught myself web technologies and worked on a few open source projects. In order to advance my knowledge I enrolled in General Assembly’s Web Development program.<br><br>
+
+			I am now a full-stack engineer with experience in in Javascript, Node, Ruby, and HTML5. I am looking forward to helping companies start and further develop their online presence.</p>
 		</div>
 		<h2 class='title' id='projects'>Projects</h2>
-	</div>
-	<div class='project-list'>
-		<section class='project' id='crudybeer'>
-			<h4>CRUDYBeer</h4>
-			<div class='project-info'>
-				<p>A full stack web app where users get to review beers. You are able to log in to view a large variety of beers, review them, and see reviews written by others. You are also able to edit or delete the reviews later.<br><br><strong>Built Using: </strong>  Node.js, Express, MongoDB, Gulp, EJS, and Ajax</p>
-				<a href="https://github.com/CollCrom/CRUDyBeer">
-					<span>
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
-					</span>
-				</a>
-				<a href="https://crudybeer.herokuapp.com/">
-					<span>
-						<i class="fa fa-chrome" aria-hidden="true"></i>
-					</span>
-				</a>
-			</div>
-		</section>
-		<section class='project' id='wowanalyzer'>
-			<h4>The WoWAnalyzer</h4>
-			<div class='project-info'>
-				<p>WoW Analyzer is an comprehensive tool for analyzing your performance based on important metrics using data gather from combat in World of Warcraft. Has over 4 million requests from 100,000 unique visitors per month.<br><br><strong>Built Using: </strong>Node.js, React, Express, and MySql</p>
-				<a href="https://github.com/CollCrom/WoWAnalyzer">
-					<span>
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
-					</span>
-				</a>
-				<a href="https://wowanalyzer.com/">
-					<span>
-						<i class="fa fa-chrome" aria-hidden="true"></i>
-					</span>
-				</a>
-			</div>
-		</section>
-		<section class='project' id='phasertd'>
-			<h4>Phaser Defense</h4>
-			<div class='project-info'>
-				<p>A take on the classic archtype of Tower Defense. You have to fend off increasingly speedy pandas to defend the village. Each panda destroyed gets the user points and all the high scores are saved on a database.<br><br><strong>Built Using: </strong>Phaser.js, Node.js, and MongoDB</p>
-				<a href="https://github.com/CollCrom/projectOne">
-					<span>
-						<i class="fa fa-github-alt" aria-hidden="true"></i>
-					</span>
-				</a>
-				<a href="https://towerdefenseserver.herokuapp.com">
-					<span>
-						<i class="fa fa-chrome" aria-hidden="true"></i>
-					</span>
-				</a>
-			</div>
-		</section>
+		<div class='project-list'>
+			<section class='project' id='crudybeer'>
+				<h4>CRUDYBeer</h4>
+				<div class='project-info'>
+					<p>A full stack web app where users get to review beers. You are able to log in to view a large variety of beers, review them, and see reviews written by others. You are also able to edit or delete the reviews later.<br><br><strong>Built Using: </strong>  Node.js, Express, MongoDB, Gulp, EJS, and Ajax</p>
+					<a href="https://github.com/CollCrom/CRUDyBeer" target="_blank">
+						<span>
+							<i class="fa fa-github-alt" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="https://crudybeer.herokuapp.com/" target="_blank">
+						<span>
+							<i class="fa fa-chrome" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class='project' id='wowanalyzer'>
+				<h4>The WoWAnalyzer</h4>
+				<div class='project-info'>
+					<p>WoW Analyzer is an comprehensive tool for analyzing your performance based on important metrics using data gather from combat in World of Warcraft. Has over 4 million requests from 100,000 unique visitors per month.<br><br><strong>Built Using: </strong>Node.js, React, Express, and MySql</p>
+					<a href="https://github.com/CollCrom/WoWAnalyzer" target="_blank">
+						<span>
+							<i class="fa fa-github-alt" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="https://wowanalyzer.com/" target="_blank">
+						<span>
+							<i class="fa fa-chrome" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class='project' id='phasertd'>
+				<h4>Phaser Defense</h4>
+				<div class='project-info'>
+					<p>A take on the classic archtype of Tower Defense. You have to fend off increasingly speedy pandas to defend the village. Each panda destroyed gets the user points and all the high scores are saved on a database.<br><br><strong>Built Using: </strong>Phaser.js, Node.js, and MongoDB</p>
+					<a href="https://github.com/CollCrom/projectOne" target="_blank">
+						<span>
+							<i class="fa fa-github-alt" aria-hidden="true"></i>
+						</span>
+					</a>
+					<a href="https://towerdefenseserver.herokuapp.com" target="_blank">
+						<span>
+							<i class="fa fa-chrome" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+			</section>
+		</div>
 	</div>
 	<h2 class='title'>Skills</h2>
 	<div class='about-me'>
@@ -98,31 +132,31 @@
 			</li>
 		</ul>
 	</div>
-	<div class='contact about-me'>
-		<a href="https://github.com/CollCrom">
+<!-- 	<div class='contact about-me'>
+		<a href="https://github.com/CollCrom" target="_blank">
 			<span>
 				<i class="fa fa-github-alt" aria-hidden="true"></i>
 			</span>
 			GitHub
 		</a>
-		<a href="https://www.linkedin.com/in/collincromwell/">
+		<a href="https://www.linkedin.com/in/collincromwell/" target="_blank">
 			<span>
 				<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 			</span>
 			LinkedIn
 		</a>
-		<a href="mailto:collcrom@gmail.com">
+		<a href="mailto:collcrom@gmail.com" target="_blank">
 			<span>
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 			</span>
 			collcrom@gmail.com
 		</a>
-		<a href="tel://1-248-933-5802">
+		<a href="tel://1-248-933-5802" target="_blank">
 			<span>
 				<i class='fa fa-mobile' aria-hidden="true"></i>
 			</span>
 			248.933.5802
 		</a>
-	</div>
+	</div> -->
 </body>
 </html>

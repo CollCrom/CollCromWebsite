@@ -53,7 +53,7 @@ a:active {
 .headshot {
   height: 200px;
   width: 200px;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 .headshot img {
   width: 100%;
@@ -70,14 +70,14 @@ a:active {
   text-align: center;
   margin-bottom: 1%;
 }
-#projects {
-  margin-bottom: 0;
+.contact {
+  opacity: 1;
 }
 .contact a:hover {
   font-size: 20px;
 }
 .contact a {
-  margin: 0 1em;
+  margin: 1% 1em;
 }
 .project-list {
   display: flex;
@@ -165,6 +165,19 @@ a:active {
   .contact {
     font-size: 12px;
   }
+}
+.navbar {
+  background-color: #D1DBBD;
+  margin: 0;
+  color: #FCFFF5;
+  opacity: .9;
+}
+.navbar a {
+  margin-bottom: 0;
+  color: black;
+}
+.navbar .contact {
+  margin-bottom: 0;
 }
 #wowanalyzer {
   background-image: url('../images/projects/wowanalyzer50.png');
