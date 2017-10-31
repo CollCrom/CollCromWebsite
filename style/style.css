@@ -28,6 +28,9 @@ body {
     opacity: 1;
   }
 }
+#typing {
+  text-align: center;
+}
 ul {
   list-style: none;
   padding: 0px;
@@ -35,13 +38,27 @@ ul {
 a,
 a:focus,
 a:visited,
-a:active {
+a:active,
+a:hover {
   text-decoration: none;
   color: #FCFFF5;
 }
-a:hover,
-a:active {
+a:hover {
   color: #91AA9D;
+}
+.navbar {
+  background-color: #D1DBBD;
+  margin: 0;
+  color: #FCFFF5;
+  opacity: .9;
+}
+.navbar a {
+  margin-bottom: 0;
+  color: black;
+  opacity: .5;
+}
+.navbar .contact {
+  margin-bottom: 0;
 }
 .flex-container {
   display: flex;
@@ -53,7 +70,7 @@ a:active {
 .headshot {
   height: 200px;
   width: 200px;
-  margin-top: 5%;
+  margin-top: 5em;
 }
 .headshot img {
   width: 100%;
@@ -68,16 +85,24 @@ a:active {
   font-family: 'Alegreya', serif;
   font-size: 2em;
   text-align: center;
-  margin-bottom: 1%;
-}
-.contact {
-  opacity: 1;
+  margin-bottom: 1em;
 }
 .contact a:hover {
-  font-size: 20px;
+  opacity: 1;
 }
 .contact a {
   margin: 1% 1em;
+}
+.resume {
+  text-align: center;
+  font-size: 2em;
+}
+.resume a {
+  color: #FCFFF5;
+  opacity: 1;
+}
+.resume a:hover {
+  color: #D1DBBD;
 }
 .project-list {
   display: flex;
@@ -135,14 +160,25 @@ a:active {
 .project-list .project-info strong {
   font-size: 1.2em;
 }
+p {
+  font-size: 1.3em;
+}
 .about-me {
   display: flex;
   justify-content: center;
-  margin-bottom: 1%;
+  align-items: center;
+}
+.about-me .contact-text {
+  display: inline;
+}
+.about-me a {
+  flex-basis: 18%;
+  text-align: center;
 }
 .about-me p {
   flex-basis: 50%;
   text-align: center;
+  font-weight: lighter;
 }
 .about-me ul {
   flex-basis: 50%;
@@ -163,21 +199,29 @@ a:active {
     flex-basis: 75%;
   }
   .contact {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .contact .contact-text {
+    display: none;
+  }
+  .contact .fa-mobile {
+    font-size: 3em;
+  }
+  .contact a {
+    margin: 3% 4% 1% 4%;
+  }
+  .contact i {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: .95em;
   }
 }
-.navbar {
-  background-color: #D1DBBD;
-  margin: 0;
-  color: #FCFFF5;
-  opacity: .9;
+li {
+  font-size: 1.15em;
 }
-.navbar a {
-  margin-bottom: 0;
-  color: black;
-}
-.navbar .contact {
-  margin-bottom: 0;
+.fa-mobile {
+  font-size: 2em;
 }
 #wowanalyzer {
   background-image: url('../images/projects/wowanalyzer50.png');
