@@ -18,6 +18,16 @@ body {
 	color: @textColor;
 }
 
+#wowanalyzer {
+	background-image: url('../images/projects/wowanalyzer25.png');
+}
+#crudybeer {
+	background-image: url('../images/projects/crudybeer25.png');
+}
+#phasertd {
+	background-image: url('../images/projects/phasertd25.png');
+}
+
 .element, .typed-cursor {
 	color: #FF8C00;
 	font-size: 2em;
@@ -37,11 +47,6 @@ body {
 	100% {
 	    opacity: 1;
 	}
-}
-
-
-#typing {
-	text-align: center;	
 }
 
 ul {
@@ -129,6 +134,7 @@ a:hover {
 .project-list {
 	display: flex;
 	.project {
+		height: 75vh;
 		text-shadow: 1px 1px 8px black;
 		display: flex;
 		flex-direction: column;
@@ -140,7 +146,7 @@ a:hover {
   		overflow: hidden;
   		padding: 1em;
   		color: @textColor;
-  		transition: flex-basis 500ms ease-in-out;
+		transition: flex-basis 500ms ease-in-out;
 	}
 	.project:hover {
 		flex-basis: 20em;
@@ -162,7 +168,7 @@ a:hover {
 		list-style: none;
 		opacity: 0;
 		transition: opacity 500ms ease-in-out;
-		overflow: scroll;
+		overflow: auto;
 		a {
 			display: inline;
 			margin-right: 20px;
@@ -175,6 +181,9 @@ a:hover {
 		}
 		p {
 			margin: 0;
+			a {
+				margin: 0;
+			}
 		}
 		strong {
 			font-size: 1.2em;
@@ -204,9 +213,22 @@ p {
 	}
 	ul {
 		flex-basis: 50%;
+		margin-bottom: 3%;
 	}
 	i {
 		flex-basis: 20%;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.contact{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.contact {
+		font-size: 10px;
 	}
 }
 
@@ -248,14 +270,4 @@ li {
 
 .fa-mobile {
 	font-size: 2em;
-}
-
-#wowanalyzer {
-	background-image: url('../images/projects/wowanalyzer50.png');
-}
-#crudybeer {
-	background-image: url('../images/projects/crudybeer50.png');
-}
-#phasertd {
-	background-image: url('../images/projects/phasertd50.png');
 }
